@@ -181,7 +181,7 @@ ul {
 
   .Blurb {
     position: relative;
-    top: 0px;
+    top: 0px !important;
     right: none;
     width: fit-content;
     height: fit-content;
@@ -218,6 +218,12 @@ ul {
 
   .FooterRow > h1 {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .Blurb {
+    top: 200px;
   }
 }
 
