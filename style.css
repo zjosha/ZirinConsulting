@@ -12,6 +12,7 @@ header {
 
 footer {
   color: black;
+  text-shadow: none;
 }
 
 ul {
@@ -178,10 +179,11 @@ ul {
     height: 50px;
   }
 
-  .Bubble {
+  .Blurb {
     position: relative;
     top: 0px;
-    width: 100vw;
+    right: none;
+    width: fit-content;
     height: fit-content;
     box-sizing: border-box;
     font-size: 1.5em;
@@ -195,10 +197,32 @@ ul {
   Header {
     position: relative;
   }
+
+  .AboutContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .AboutText {
+    margin: auto;
+    background-color: #60afff;
+    padding: 5px;
+    width: 95%;
+  }
+
+  .FooterRow {
+    flex-direction: column !important;
+  }
+
+  .FooterRow > h1 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 1200px) {
-  .Bubble {
+  .Blurb {
     font-size: 2em;
   }
 }
