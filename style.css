@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+footer {
+  color: black;
+}
+
+ul {
+  padding: 0px;
+}
+
+.Main {
+  background-color: #38383a;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  height: fit-content;
+  min-height: 100vh;
+  color: white;
+}
+
+.MainText {
+  width: 80vw;
+  margin: auto;
+  padding: 40px;
+  background-color: #3399ff;
+  z-index: 1;
+}
+
+.Bubble {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  width: fit-content;
+  height: 100px;
+  background-color: #3399ff;
+  font-size: 3em;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(31, 26, 26, 0.25);
+}
+
+#BackgroundImage {
+  position: sticky;
+  top: 0px;
+  left: 5vw;
+  height: 50vw;
+  width: 90vw;
+}
+
+.ImagePlaceholder {
+  height: 40vw;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextCenter {
+  text-align: center;
+}
+
+.NavBar {
+  height: 100px;
+  background: #3399ff;
+  box-shadow: 0px 4px 4px rgba(31, 26, 26, 0.25);
+  padding: 0;
+  z-index: 2;
+}
+
+#NavBarLogo {
+  height: 150px;
+  width: 150px;
+}
+
+.Title {
+  background: #60afff;
+  color: white;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.MobileTitle {
+  color: white;
+  padding: 10px;
+  display: none;
+  height: 50px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.MobileTitle > h1 {
+  font-size: 1em;
+}
+
+.Title > * {
+  margin: 5px;
+  flex: 1 1;
+}
+
+.Title > p {
+  font-size: 20px;
+}
+
+.TopGradient {
+  height: 10px;
+  background: #3399ff;
+  background: -moz-linear-gradient(
+    left,
+    rgba(96, 175, 255, 1) 0%,
+    rgba(51, 153, 255, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(96, 175, 255, 1)),
+    color-stop(100%, rgba(51, 153, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(96, 175, 255, 1) 0%,
+    rgba(51, 153, 255, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(96, 175, 255, 1) 0%,
+    rgba(51, 153, 255, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(96, 175, 255, 1) 0%,
+    rgba(51, 153, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(96, 175, 255, 1) 0%,
+    rgba(51, 153, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60afff', endColorstr='#3399ff', GradientType=1 );
+}
+
+@media (max-width: 515px) {
+  .Title {
+    display: none;
+  }
+  .MobileTitle {
+    display: block;
+  }
+  .NavBar {
+    height: 50px;
+  }
+
+  .Bubble {
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: fit-content;
+    box-sizing: border-box;
+    font-size: 1.5em;
+  }
+
+  #NavBarLogo {
+    width: 75px;
+    height: 75px;
+  }
+
+  Header {
+    position: relative;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Bubble {
+    font-size: 2em;
+  }
+}
+
+.FooterRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FooterRow > * {
+  margin: auto;
+}
