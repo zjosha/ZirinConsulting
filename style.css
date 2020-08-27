@@ -17,6 +17,7 @@ footer {
 
 ul {
   padding: 0px;
+  list-style-type: none;
 }
 
 .Main {
@@ -31,17 +32,16 @@ ul {
 }
 
 .AboutContainer {
-  width: 80vw;
-  margin: auto;
-  padding: 40px;
-  background-color: #3399ff;
+  margin-top: 0px;
+  padding: 10px 10px 20px 10px;
+  background-color: #60afff;
   box-shadow: 0px 4px 4px rgba(31, 26, 26, 0.25);
   z-index: 1;
 }
 
 .AboutText {
   margin: auto;
-  background-color: #60afff;
+  background-color: #3399ff;
   padding: 20px;
   width: 90%;
   box-shadow: 0px 4px 4px rgba(31, 26, 26, 0.25);
@@ -88,38 +88,38 @@ ul {
 }
 
 .NavBar {
-  height: 100px;
+  height: 80px;
   background: #3399ff;
   box-shadow: 0px 4px 4px rgba(31, 26, 26, 0.25);
   padding: 0;
   z-index: 2;
 }
 
+
 #NavBarLogo {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
 }
 
 .Title {
   background: #60afff;
   color: white;
-  height: 100px;
+  height: 120px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 .MobileTitle {
   color: white;
-  padding: 10px;
+  padding: 0px 10px 0px 20px;
   display: none;
   height: 50px;
   flex-grow: 1;
   box-sizing: border-box;
-  text-align: center;
 }
 
 .MobileTitle > h1 {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .Title > * {
@@ -130,6 +130,121 @@ ul {
 .Title > p {
   font-size: 20px;
 }
+
+.TitleLinks {
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .Blurb {
+    top: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Blurb {
+    font-size: 2em;
+  }
+}
+
+
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.Footer > * {
+  margin-left: 10px;
+}
+
+.Footer p {
+  font-size: 12px;
+}
+
+
+/* Mobile Styling */
+
+@media (max-width: 530px) {
+  .Title {
+    display: none;
+  }
+  .MobileTitle {
+    display: block;
+  }
+  .NavBar {
+    height: 50px;
+  }
+
+  .Blurb {
+    position: relative;
+    top: 0px !important;
+    right: none;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    font-size: 1.5em;
+  }
+
+  #NavBarLogo {
+    width: 75px;
+    height: 75px;
+  }
+
+  Header {
+    position: relative;
+  }
+
+  .AboutContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 40px 40px 40px  ;
+  }
+
+  .AboutText {
+    margin: auto;
+    padding: 5px;
+    width: 95%;
+  }
+
+  .FooterRow {
+    flex-direction: column !important;
+  }
+
+  .FooterRow > h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* END Mobile Styling */
+
+/* Utility Classes */
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.ml {
+  margin-left: 10px;
+}
+
+.m-small {
+  margin: 4px;
+}
+
+.text-l {
+  text-align: left;
+}
+
+/* END Utility Classes */
 
 .TopGradient {
   height: 10px;
@@ -166,79 +281,4 @@ ul {
     rgba(51, 153, 255, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60afff', endColorstr='#3399ff', GradientType=1 );
-}
-
-@media (max-width: 515px) {
-  .Title {
-    display: none;
-  }
-  .MobileTitle {
-    display: block;
-  }
-  .NavBar {
-    height: 50px;
-  }
-
-  .Blurb {
-    position: relative;
-    top: 0px !important;
-    right: none;
-    width: fit-content;
-    height: fit-content;
-    box-sizing: border-box;
-    font-size: 1.5em;
-  }
-
-  #NavBarLogo {
-    width: 75px;
-    height: 75px;
-  }
-
-  Header {
-    position: relative;
-  }
-
-  .AboutContainer {
-    width: 90%;
-    margin: auto;
-    margin-top: 40px;
-    padding: 10px;
-  }
-
-  .AboutText {
-    margin: auto;
-    background-color: #60afff;
-    padding: 5px;
-    width: 95%;
-  }
-
-  .FooterRow {
-    flex-direction: column !important;
-  }
-
-  .FooterRow > h1 {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 800px) {
-  .Blurb {
-    top: 200px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .Blurb {
-    font-size: 2em;
-  }
-}
-
-.FooterRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.FooterRow > * {
-  margin: auto;
 }
