@@ -1,13 +1,12 @@
 var AboutList = [
-                    "Pricing analyses for primary, excess and reinsurance for most Property & Casualty lines of business",  
-                    "Reserve review and evaluation for most Property & Casualty lines of business", 
+                    "Reserve review and evaluation for all Property & Casualty lines of business", 
                     "Statutory statement of actuarial opinion preparation",
                     "Board and management reporting",
-                    "Review of excess insurance / reinsurance programs",
+                    "Excess insurance validation",
                     "Captive evaluation and feasibility studies",
                     "Cost allocation studies",
-                    "Peer review services",
-                    "Financial planning and long term models",
+                    "Peer Review services",
+                    "Financial Planning and long term models",
                     "Risk and capital models"
                 ];
 
