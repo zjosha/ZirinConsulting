@@ -3,11 +3,11 @@ var AboutList = [
                     "Reserve review and evaluation for most Property & Casualty lines of business", 
                     "Statutory statement of actuarial opinion preparation",
                     "Board and management reporting",
-                    "Excess insurance validation",
+                    "Review of excess insurance / reinsurance programs",
                     "Captive evaluation and feasibility studies",
                     "Cost allocation studies",
-                    "Peer Review services",
-                    "Financial Planning and long term models",
+                    "Peer review services",
+                    "Financial planning and long term models",
                     "Risk and capital models"
                 ];
 
