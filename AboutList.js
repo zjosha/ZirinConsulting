@@ -1,5 +1,6 @@
 var AboutList = [
-                    "Reserve review and evaluation for all Property & Casualty lines of business", 
+                    "Pricing Analysis including primary, excess and reinsurance for most Property & Casualty lines of business",
+                    "Reserve review and evaluation for most Property & Casualty lines of business", 
                     "Statutory statement of actuarial opinion preparation",
                     "Board and management reporting",
                     "Excess insurance validation",
